@@ -1,2 +1,2 @@
 # Website-Development
-This is where I upload my reposityabout web development.
+This is where I upload my repository about web development.
