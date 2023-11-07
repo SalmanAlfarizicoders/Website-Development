@@ -1,0 +1,115 @@
+:root{
+    --bg--header: black;
+
+    --clr-60: hsl(0, 0%, 100%);
+    --clr-30: hsl(146, 100%, 85%);
+    --clr-10: hsl(272, 100%, 60%);
+
+    --clr-neutral: #f8f8f8;
+
+    --fw-regular: 400;
+    --fw-black: 700;
+    --fw-bold: 800;
+}
+
+.no-list-type{
+    list-style-type: none;
+}
+
+.hyperlink-style{
+    text-decoration: none;
+    color: var(--clr-neutral);
+}
+
+.hyperlink-style:hover{
+    color: var(--clr-10);
+}
+
+*,
+*::before,
+*::after{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header{
+    z-index: 1000;
+    width: 100%;
+    text-align: center;
+    position: fixed;
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em;
+    color: var(--clr-neutral);
+    background-color: black;
+}
+
+main{
+    height: 200vh;
+    background-color: var(--clr-60);
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.logo{
+    font-weight: var(--fw-black);
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+}
+
+.list-container{
+    display: flex;
+}
+
+.list-container li{
+    text-transform: uppercase;
+    font-size: 1.125rem;
+    margin-left: 1em;
+}
+
+.dropdown-list-container li{
+    text-transform: uppercase;
+    margin-bottom: 1em;
+    margin-right: 1em;
+}
+
+/*Responsive*/
+
+.navbar{
+    display: none;
+}
+
+.dropdown-button{
+    display: none;
+}
+
+/*
+This is why the dropdown menu can appear when the bars icon is clicked without using JavaScript.*/
+.dropdown-button:checked ~ .dropdown-navbar{
+    display: block;
+}
+
+.dropdown-navbar{
+    display: none;
+    position: absolute;
+    right: 0;
+    top: 100%;
+    text-align: center;
+}
+
+@media(min-width: 600px){
+    .navbar{
+        display: block;
+    }
+
+    .dropdown-navbar{
+        display: none;
+    }
+
+    .dropdown-button-label{
+        display: none;
+    }
+}
