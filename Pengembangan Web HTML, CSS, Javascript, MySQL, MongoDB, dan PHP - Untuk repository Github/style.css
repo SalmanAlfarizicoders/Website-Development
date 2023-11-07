@@ -43,7 +43,7 @@ header{
     align-items: center;
     padding: 1em;
     color: var(--clr-neutral);
-    background-color: black;
+    background-color: --bg-header;
 }
 
 main{
@@ -98,7 +98,7 @@ This is why the dropdown menu can appear when the bars icon is clicked without u
     right: 0;
     top: 100%;
     text-align: center;
-    background-color: black;
+    background-color: --bg-header;
 }
 
 @media(min-width: 600px){
