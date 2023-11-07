@@ -98,6 +98,7 @@ This is why the dropdown menu can appear when the bars icon is clicked without u
     right: 0;
     top: 100%;
     text-align: center;
+    background-color: black;
 }
 
 @media(min-width: 600px){
