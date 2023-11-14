@@ -1,0 +1,92 @@
+.profile{
+    width: 18rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid grey;
+    box-shadow: 3px 3px 15px grey;
+    padding-block: 1rem;
+    border-radius: 25px;
+    font-family: 'Poppins';
+    
+    background-image: linear-gradient(to bottom, blue 25%, white -75%)
+}
+
+.user-profile-pictures{
+    width: 150px;
+    font-style: italic;
+}
+
+h3{
+    font-weight: 700;
+}
+
+p{
+    font-size: 0.9rem;
+}
+
+.icon{
+    font-size: 1.7rem;
+}
+
+.fa-github{
+    color: black;
+}
+
+.fa-stack-overflow{
+    color: orange;
+}
+
+.fa-youtube{
+    color: red;
+}
+
+.fa-linkedin{
+    color: blue;
+}
+/*Hover*/
+
+.fa-github:hover{
+    color: rgb(105, 105, 105);
+}
+
+.fa-stack-overflow:hover{
+    color: rgb(255, 195, 85);
+}
+
+.fa-youtube:hover{
+    color: rgb(255, 60, 60);
+}
+
+.fa-linkedin:hover{
+    color: rgb(65, 65, 255);
+}
+
+/*End of Hover Style*/
+
+.button{
+    display: inline-block;
+    background-color: rgb(0, 17, 255);
+    border-radius: 100vw;
+    border: none;
+    padding-block: .3rem;
+    padding-inline: .7rem;
+    color: white;
+    font-weight: 500;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.button:hover{
+    background-color: rgb(65, 65, 255);
+}
+
+.stat{
+    color: black;
+    font-weight: 500;
+}
+
+.comment{
+    border-inline: 1px solid black;
+}
+
